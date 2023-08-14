@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Login and Signup Form</title>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-switch">
+        <button class="switch-btn login">Login</button>
+        <button class="switch-btn active-btn signup">Signup</button>
+      </div>
+      <div class="loginForm hidden">
+        <header class="header">
+          <h1 class="heading">Login</h1>
+          <input type="email" class="input-box" placeholder="Email" required />
+          <input
+            type="password"
+            placeholder="Password"
+            class="input-box"
+            required
+          />
+          <a href="#" class="link">Forgot password?</a>
+          <button class="btn">Login</button>
+          <p class="signup-option">
+            Don't have an account?
+            <a href="#" class="link signup-link">Signup</a>
+          </p>
+        </header>
+        <aside>
+          <button class="btn btn-grid facebook">
+            <ion-icon name="logo-facebook" class="fb-logo"></ion-icon>
+            <p class="btn-text">Login with Facebook</p>
+          </button>
+          <button class="btn btn-grid google">
+            <ion-icon name="logo-google" class="google-logo"></ion-icon>
+            <p class="btn-text">Login with Google</p>
+          </button>
+        </aside>
+      </div>
+      <div class="signupForm">
+        <header class="header">
+          <h1 class="heading">Signup</h1>
+          <input type="email" class="input-box" placeholder="Email" required />
+          <input
+            type="password"
+            placeholder="Create Password"
+            class="input-box"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            class="input-box"
+            required
+          />
+          <a href="#" class="link">Forgot password?</a>
+          <button class="btn">Signup</button>
+          <p class="signup-option">
+            Already have an account?
+            <a href="#" class="link login-link">Login</a>
+          </p>
+        </header>
+        <aside>
+          <button class="btn btn-grid facebook">
+            <ion-icon name="logo-facebook" class="fb-logo"></ion-icon>
+            <p class="btn-text">Login with Facebook</p>
+          </button>
+          <button class="btn btn-grid google">
+            <ion-icon name="logo-google" class="google-logo"></ion-icon>
+            <p class="btn-text">Login with Google</p>
+          </button>
+        </aside>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
